@@ -14,7 +14,7 @@ const listaDeTeclas = document.querySelectorAll('.tecla');
 let contador = 0;
 
 //estrutura de repetição "while" significa "enquanto algo acontecer"
-while(contador < 9){
+while(contador < listaDeTeclas.length){
     const efeito = listaDeTeclas[contador].classList[1];
     const idElementoAudio = "#som_"+efeito;
      listaDeTeclas[contador].onclick = function();{
