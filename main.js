@@ -20,7 +20,8 @@ while(contador < listaDeTeclas.length){
 
      console.log(contador);
     }
-    tecla.onkeydown = function(){
+    tecla.onkeydown = function(evento){
+        if(evento.code != "Tab")
         tecla.classList.add('ativa');
     }
     tecla.onkeyup = function(){
